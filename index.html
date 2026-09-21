@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fa" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionHub - Product Details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="#" class="brand-logo">
+                    <img src="assets/icons/logo.svg" alt="FashionHub" class="logo-img">
+                </a>
+
+                <nav class="main-nav">
+                    <button type="button" aria-label="nav-btn" class="nav-btn">
+                        Category
+                    </button>
+
+                    <a href="#" class="nav-link">Brand</a>
+                    <a href="#" class="nav-link">Contact</a>
+                    <a href="#" class="nav-link">FAQ</a>
+                </nav>
+            </div>
+
+            <div class="header-right">
+                <div class="action-icons">
+                    <button class="icon-btn" aria-label="Search">
+                        <img src="assets/icons/bag-red.svg" alt="bag-red" class="icon-img">
+                    </button>
+                    <button class="icon-btn" aria-label="Cart">
+                        <img src="assets/icons/notification.svg" alt="Cart" class="icon-img">
+                    </button>
+                </div>
+
+                <a href="#" class="user-profile">
+                    <img src="assets/images/user-1.png" alt="Scarlet Johnson" class="avatar-img">
+                    <span class="greeting-text">Good morning</span>
+                    <span class="user-name">Scarlet Johnson</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main class="site-main">
+        <div class="container">
+            
+            <nav class="breadcrumb">
+                <a href="#">Home</a>
+                <span class="separator">></span>
+                <a href="#">Fashion</a>
+                <span class="separator">></span>
+                <a href="#">Products</a>
+                <span class="separator">></span>
+                <a href="#">Skirts</a>
+                <span class="separator">></span>
+                <span class="current">Coast Dress</span>
+            </nav>
+
+            <section class="product-section">
+                <div class="product-gallery">
+                    <div class="main-image-wrapper">
+                        <img src="assets/images/product-1.png" alt="Coast Dress" class="main-img">
+                    </div>
+                    <div class="thumbnail-list">
+                        <button class="thumb-btn active"><img src="assets/images/product-2.png" alt="thumb"></button>
+                        <button class="thumb-btn"><img src="assets/images/product-3.png" alt="thumb"></button>
+                        <button class="thumb-btn"><img src="assets/images/product-4.png" alt="thumb"></button>
+                        <button class="thumb-btn"><img src="assets/images/product-5.png" alt="thumb"></button>
+                    </div>
+                </div>
+
+                <div class="product-details">
+                    <div class="details-header">
+                        <h1 class="product-title">Coast Dress</h1>
+                        <div class="header-actions">
+                            <button class="wishlist-btn">
+                                <img src="assets/icons/heart.svg" alt="heart">
+                                <span>109</span>
+                            </button>
+                            <button class="action-icon-btn"><img src="assets/icons/archive.svg" alt="bookmark"></button>
+                            <button class="action-icon-btn"><img src="assets/icons/share.svg" alt="share"></button>
+                        </div>
+                    </div>
+
+                    <p class="product-subtitle">Breezy, versatile, seaside ready style</p>
+
+                    <div class="price-row">
+                        <span class="current-price">$710.99</span>
+                        <span class="old-price">$799.99</span>
+                        <div class="rating-badge">
+                            <img src="assets/icons/star.svg" alt="star">
+                            <span>4.8</span>
+                        </div>
+                        <div class="reviews-count-badge">
+                            <img src="assets/icons/message.svg" alt="message">
+                            <span>67 Reviews</span>
+                        </div>
+                    </div>
+
+                    <p class="enjoy-text">93% of buyers have recommended this.</p>
+
+                    <div class="option-block">
+                        <span class="option-title">Choose a Color</span>
+                        <div class="color-options">
+                            <button class="color-btn active" style="background-color: #E8D8C8;"></button>
+                            <button class="color-btn" style="background-color: #A3D168;"></button>
+                            <button class="color-btn" style="background-color: #B2A4FF;"></button>
+                            <button class="color-btn" style="background-color: #FFB4D6;"></button>
+                            <button class="color-btn" style="background-color: #82C38E;"></button>
+                            <button class="color-btn" style="background-color: #FFB3A7;"></button>
+                        </div>
+                    </div>
+
+                    <div class="option-block">
+                        <span class="option-title">Choose a Size</span>
+                        <div class="size-options">
+                            <label class="size-radio active"><input type="radio" name="size" checked> Small</label>
+                            <label class="size-radio"><input type="radio" name="size"> Medium</label>
+                            <label class="size-radio"><input type="radio" name="size"> Large</label>
+                            <label class="size-radio"><input type="radio" name="size"> Extra Large</label>
+                            <label class="size-radio"><input type="radio" name="size"> XXL</label>
+                        </div>
+                    </div>
+
+                    <div class="cart-action-row">
+                        <div class="quantity-control">
+                            <button class="qty-btn">-</button>
+                            <span class="qty-num">5</span>
+                            <button class="qty-btn">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <img src="assets/icons/bag-white.svg" alt="bag">
+                            <span>Add To Cart</span>
+                        </button>
+                    </div>
+
+                    <div class="delivery-box">
+                        <div class="delivery-item">
+                            <img src="assets/icons/truck.svg" alt="truck" class="delivery-icon">
+                            <div>
+                                <strong class="delivery-title">Free Delivery</strong>
+                                <p class="delivery-desc">Enter your Postal code for Delivery Availability. <a href="#">Details</a></p>
+                            </div>
+                        </div>
+                        <div class="delivery-item">
+                            <img src="assets/icons/bag-brown.svg" alt="rotate" class="delivery-icon">
+                            <div>
+                                <strong class="delivery-title">Return Delivery</strong>
+                                <p class="delivery-desc">Free 30 days Delivery Return. <a href="#">Details</a></p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+</body>
+</html>
