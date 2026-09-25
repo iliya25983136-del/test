@@ -1,166 +1,499 @@
-<!DOCTYPE html>
-<html lang="fa" dir="ltr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FashionHub - Product Details</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    />
+  </head>
+  <body>
     <header class="site-header">
-        <div class="header-container">
-            <div class="header-left">
-                <a href="#" class="brand-logo">
-                    <img src="assets/icons/logo.svg" alt="FashionHub" class="logo-img">
-                </a>
+      <div class="header-container">
+        <div class="header-left">
+          <a href="#" class="brand-logo">
+            <img
+              src="assets/icons/logo.svg"
+              alt="FashionHub"
+              class="logo-img"
+            />
+          </a>
 
-                <nav class="main-nav">
-                    <button type="button" aria-label="nav-btn" class="nav-btn">
-                        Category
-                    </button>
+          <nav class="main-nav">
+            <button type="button" aria-label="nav-btn" class="nav-btn">
+              Category
+            </button>
 
-                    <a href="#" class="nav-link">Brand</a>
-                    <a href="#" class="nav-link">Contact</a>
-                    <a href="#" class="nav-link">FAQ</a>
-                </nav>
-            </div>
-
-            <div class="header-right">
-                <div class="action-icons">
-                    <button class="icon-btn" aria-label="Search">
-                        <img src="assets/icons/bag-red.svg" alt="bag-red" class="icon-img">
-                    </button>
-                    <button class="icon-btn" aria-label="Cart">
-                        <img src="assets/icons/notification.svg" alt="Cart" class="icon-img">
-                    </button>
-                </div>
-
-                <a href="#" class="user-profile">
-                    <img src="assets/images/user-1.png" alt="Scarlet Johnson" class="avatar-img">
-                    <span class="greeting-text">Good morning</span>
-                    <span class="user-name">Scarlet Johnson</span>
-                </a>
-            </div>
+            <a href="#" class="nav-link">Brand</a>
+            <a href="#" class="nav-link">Contact</a>
+            <a href="#" class="nav-link">FAQ</a>
+          </nav>
         </div>
+
+        <div class="header-right">
+          <div class="action-icons">
+            <button class="icon-btn" aria-label="Cart, 1 item">
+              <img src="assets/icons/bag-red.svg" alt="" class="icon-img" />
+              <span class="badge-count">1</span>
+            </button>
+            <button class="icon-btn" aria-label="Notifications">
+              <img
+                src="assets/icons/notification.svg"
+                alt=""
+                class="icon-img"
+              />
+            </button>
+          </div>
+
+          <a href="#" class="user-profile">
+            <img
+              src="assets/images/user-1.png"
+              alt="Scarlet Johnson"
+              class="avatar-img"
+            />
+            <span class="greeting-text">Good morning</span>
+            <span class="user-name">Scarlet Johnson</span>
+          </a>
+        </div>
+      </div>
     </header>
 
     <main class="site-main">
-        <div class="container">
-            
-            <nav class="breadcrumb">
-                <a href="#">Home</a>
-                <span class="separator">></span>
-                <a href="#">Fashion</a>
-                <span class="separator">></span>
-                <a href="#">Products</a>
-                <span class="separator">></span>
-                <a href="#">Skirts</a>
-                <span class="separator">></span>
-                <span class="current">Coast Dress</span>
-            </nav>
+      <div class="container">
+        <nav class="breadcrumb">
+          <a href="#">Home</a>
+          <span class="separator">></span>
+          <a href="#">Fashion</a>
+          <span class="separator">></span>
+          <a href="#">Products</a>
+          <span class="separator">></span>
+          <a href="#">Skirts</a>
+          <span class="separator">></span>
+          <span class="current">Coast Dress</span>
+        </nav>
 
-            <section class="product-section">
-                <div class="product-gallery">
-                    <div class="main-image-wrapper">
-                        <img src="assets/images/product-1.png" alt="Coast Dress" class="main-img">
-                    </div>
-                    <div class="thumbnail-list">
-                        <button class="thumb-btn active"><img src="assets/images/product-2.png" alt="thumb"></button>
-                        <button class="thumb-btn"><img src="assets/images/product-3.png" alt="thumb"></button>
-                        <button class="thumb-btn"><img src="assets/images/product-4.png" alt="thumb"></button>
-                        <button class="thumb-btn"><img src="assets/images/product-5.png" alt="thumb"></button>
-                    </div>
+        <section class="product-section">
+          <div class="product-gallery">
+            <div class="main-image-wrapper">
+              <!-- Replace with a photo of the model in white trousers; object-position/animation below keep the crop above the hips -->
+              <img
+                src="assets/images/product-1.png"
+                alt="Model wearing the Coast Dress top with white trousers"
+                class="main-img"
+              />
+            </div>
+            <div class="thumbnail-list">
+              <button class="thumb-btn active">
+                <img src="assets/images/product-2.png" alt="thumb" />
+              </button>
+              <button class="thumb-btn">
+                <img src="assets/images/product-3.png" alt="thumb" />
+              </button>
+              <button class="thumb-btn">
+                <img src="assets/images/product-4.png" alt="thumb" />
+              </button>
+              <button class="thumb-btn">
+                <img src="assets/images/product-5.png" alt="thumb" />
+              </button>
+            </div>
+          </div>
+
+          <div class="product-details">
+            <div class="details-header">
+              <h1 class="product-title">Coast Dress</h1>
+              <div class="header-actions">
+                <button class="wishlist-btn">
+                  <img src="assets/icons/heart.svg" alt="heart" />
+                  <span>109</span>
+                </button>
+                <button class="action-icon-btn">
+                  <img src="assets/icons/archive.svg" alt="bookmark" />
+                </button>
+                <button class="action-icon-btn">
+                  <img src="assets/icons/share.svg" alt="share" />
+                </button>
+              </div>
+            </div>
+
+            <p class="product-subtitle">
+              Breezy, versatile, seaside ready style
+            </p>
+
+            <div class="price-row">
+              <span class="current-price">$710.99</span>
+              <span class="old-price">$799.99</span>
+              <div class="rating-badge">
+                <img src="assets/icons/star.svg" alt="star" />
+                <span>4.8</span>
+              </div>
+              <div class="reviews-count-badge">
+                <img src="assets/icons/message.svg" alt="message" />
+                <span>67 Reviews</span>
+              </div>
+            </div>
+
+            <p class="enjoy-text">93% of buyers have recommended this.</p>
+
+            <div class="option-block">
+              <span class="option-title">Choose a Color</span>
+              <div class="color-options">
+                <button
+                  class="color-btn active"
+                  style="background-color: #e8d8c8"
+                ></button>
+                <button
+                  class="color-btn"
+                  style="background-color: #a3d168"
+                ></button>
+                <button
+                  class="color-btn"
+                  style="background-color: #b2a4ff"
+                ></button>
+                <button
+                  class="color-btn"
+                  style="background-color: #ffb4d6"
+                ></button>
+                <button
+                  class="color-btn"
+                  style="background-color: #82c38e"
+                ></button>
+                <button
+                  class="color-btn"
+                  style="background-color: #ffb3a7"
+                ></button>
+              </div>
+            </div>
+
+            <div class="option-block">
+              <span class="option-title">Choose a Size</span>
+              <div class="size-options">
+                <label class="size-radio active"
+                  ><input type="radio" name="size" checked /> Small</label
+                >
+                <label class="size-radio"
+                  ><input type="radio" name="size" /> Medium</label
+                >
+                <label class="size-radio"
+                  ><input type="radio" name="size" /> Large</label
+                >
+                <label class="size-radio"
+                  ><input type="radio" name="size" /> Extra Large</label
+                >
+                <label class="size-radio"
+                  ><input type="radio" name="size" /> XXL</label
+                >
+              </div>
+            </div>
+
+            <div class="cart-action-row">
+              <div class="quantity-control">
+                <button class="qty-btn">-</button>
+                <span class="qty-num">5</span>
+                <button class="qty-btn">+</button>
+              </div>
+              <button class="add-to-cart-btn">
+                <img src="assets/icons/bag-white.svg" alt="bag" />
+                <span>Add To Cart</span>
+              </button>
+            </div>
+
+            <div class="delivery-box">
+              <div class="delivery-item">
+                <img
+                  src="assets/icons/truck.svg"
+                  alt="truck"
+                  class="delivery-icon"
+                />
+                <div>
+                  <strong class="delivery-title">Free Delivery</strong>
+                  <p class="delivery-desc">
+                    Enter your Postal code for Delivery Availability.
+                    <a href="#">Details</a>
+                  </p>
                 </div>
-
-                <div class="product-details">
-                    <div class="details-header">
-                        <h1 class="product-title">Coast Dress</h1>
-                        <div class="header-actions">
-                            <button class="wishlist-btn">
-                                <img src="assets/icons/heart.svg" alt="heart">
-                                <span>109</span>
-                            </button>
-                            <button class="action-icon-btn"><img src="assets/icons/archive.svg" alt="bookmark"></button>
-                            <button class="action-icon-btn"><img src="assets/icons/share.svg" alt="share"></button>
-                        </div>
-                    </div>
-
-                    <p class="product-subtitle">Breezy, versatile, seaside ready style</p>
-
-                    <div class="price-row">
-                        <span class="current-price">$710.99</span>
-                        <span class="old-price">$799.99</span>
-                        <div class="rating-badge">
-                            <img src="assets/icons/star.svg" alt="star">
-                            <span>4.8</span>
-                        </div>
-                        <div class="reviews-count-badge">
-                            <img src="assets/icons/message.svg" alt="message">
-                            <span>67 Reviews</span>
-                        </div>
-                    </div>
-
-                    <p class="enjoy-text">93% of buyers have recommended this.</p>
-
-                    <div class="option-block">
-                        <span class="option-title">Choose a Color</span>
-                        <div class="color-options">
-                            <button class="color-btn active" style="background-color: #E8D8C8;"></button>
-                            <button class="color-btn" style="background-color: #A3D168;"></button>
-                            <button class="color-btn" style="background-color: #B2A4FF;"></button>
-                            <button class="color-btn" style="background-color: #FFB4D6;"></button>
-                            <button class="color-btn" style="background-color: #82C38E;"></button>
-                            <button class="color-btn" style="background-color: #FFB3A7;"></button>
-                        </div>
-                    </div>
-
-                    <div class="option-block">
-                        <span class="option-title">Choose a Size</span>
-                        <div class="size-options">
-                            <label class="size-radio active"><input type="radio" name="size" checked> Small</label>
-                            <label class="size-radio"><input type="radio" name="size"> Medium</label>
-                            <label class="size-radio"><input type="radio" name="size"> Large</label>
-                            <label class="size-radio"><input type="radio" name="size"> Extra Large</label>
-                            <label class="size-radio"><input type="radio" name="size"> XXL</label>
-                        </div>
-                    </div>
-
-                    <div class="cart-action-row">
-                        <div class="quantity-control">
-                            <button class="qty-btn">-</button>
-                            <span class="qty-num">5</span>
-                            <button class="qty-btn">+</button>
-                        </div>
-                        <button class="add-to-cart-btn">
-                            <img src="assets/icons/bag-white.svg" alt="bag">
-                            <span>Add To Cart</span>
-                        </button>
-                    </div>
-
-                    <div class="delivery-box">
-                        <div class="delivery-item">
-                            <img src="assets/icons/truck.svg" alt="truck" class="delivery-icon">
-                            <div>
-                                <strong class="delivery-title">Free Delivery</strong>
-                                <p class="delivery-desc">Enter your Postal code for Delivery Availability. <a href="#">Details</a></p>
-                            </div>
-                        </div>
-                        <div class="delivery-item">
-                            <img src="assets/icons/bag-brown.svg" alt="rotate" class="delivery-icon">
-                            <div>
-                                <strong class="delivery-title">Return Delivery</strong>
-                                <p class="delivery-desc">Free 30 days Delivery Return. <a href="#">Details</a></p>
-                            </div>
-                        </div>
-                    </div>
-
+              </div>
+              <div class="delivery-item">
+                <img
+                  src="assets/icons/bag-brown.svg"
+                  alt="rotate"
+                  class="delivery-icon"
+                />
+                <div>
+                  <strong class="delivery-title">Return Delivery</strong>
+                  <p class="delivery-desc">
+                    Free 30 days Delivery Return. <a href="#">Details</a>
+                  </p>
                 </div>
-            </section>
+              </div>
+            </div>
+          </div>
+        </section>
 
-        </div>
+        <section class="reviews-section">
+          <h2 class="section-title">Reviews</h2>
+
+          <div class="review-list">
+            <article class="review-item">
+              <div class="review-top">
+                <img
+                  src="assets/images/user-2.png"
+                  alt="Annie Stanley"
+                  class="reviewer-avatar"
+                />
+                <div class="review-meta">
+                  <span class="reviewer-name">Annie Stanley</span>
+                  <span class="review-date">3 Days ago</span>
+                </div>
+              </div>
+              <div
+                class="review-stars"
+                role="img"
+                aria-label="5 out of 5 stars"
+              >
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+              </div>
+              <h3 class="review-title">Greate Product</h3>
+              <p class="review-text">
+                I was surprised by how soft and comfortable the fabric feels.
+                The dress fits perfectly and looks even better in person —
+                totally worth the price!
+              </p>
+              <div class="review-actions">
+                <button type="button" class="review-action-btn like-btn">
+                  <img src="assets/icons/heart.svg" alt="" />
+                  Like
+                </button>
+                <button type="button" class="review-action-btn reply-btn">
+                  Reply
+                </button>
+              </div>
+            </article>
+
+            <article class="review-item">
+              <div class="review-top">
+                <img
+                  src="assets/images/user-3.png"
+                  alt="Amelie Cooper"
+                  class="reviewer-avatar"
+                />
+                <div class="review-meta">
+                  <span class="reviewer-name">Amelie Cooper</span>
+                  <span class="review-date">3 Days ago</span>
+                </div>
+              </div>
+              <div
+                class="review-stars"
+                role="img"
+                aria-label="5 out of 5 stars"
+              >
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+              </div>
+              <h3 class="review-title">The best product In Market</h3>
+              <p class="review-text">
+                The blouse arrived quickly and the quality is amazing. The
+                stitching is neat, colors are vibrant, and it feels really
+                elegant when worn. I'll definitely buy again!
+              </p>
+              <div class="review-actions">
+                <button type="button" class="review-action-btn like-btn">
+                  <img src="assets/icons/heart.svg" alt="" />
+                  Like
+                </button>
+                <button type="button" class="review-action-btn reply-btn">
+                  Reply
+                </button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="write-review-section">
+          <h2 class="section-title">Write a Review</h2>
+
+          <form class="review-form" id="reviewForm" novalidate>
+            <div class="form-field">
+              <label for="reviewTitle">Review Title</label>
+              <input
+                type="text"
+                id="reviewTitle"
+                name="reviewTitle"
+                placeholder="Great Products"
+                required
+              />
+            </div>
+
+            <div class="form-field">
+              <label for="reviewContent">Review Content</label>
+              <textarea
+                id="reviewContent"
+                name="reviewContent"
+                rows="6"
+                placeholder="I ordered a summer dress from this boutique and absolutely loved it. The fabric is soft and light, perfect for warm days, and the fit was exactly as described. What impressed me most was the attention to detail — from the fine stitching to the beautiful packaging. It feels like each piece is made with care. I've already recommended the store to a few friends!"
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="submit-review-btn">
+              Submit Review
+            </button>
+          </form>
+        </section>
+
+        <section class="similar-section">
+          <h2 class="section-title">Similar Items You Might Also Like</h2>
+
+          <div class="similar-carousel">
+            <button
+              type="button"
+              class="carousel-arrow prev-arrow"
+              aria-label="Previous items"
+            >
+              &#8249;
+            </button>
+
+            <div class="similar-track">
+              <article class="similar-card">
+                <div class="similar-img-wrap">
+                  <img src="assets/images/product-6.png" alt="Cotton Slip" />
+                  <button
+                    type="button"
+                    class="similar-wishlist-btn"
+                    aria-label="Add Cotton Slip to wishlist"
+                  >
+                    <img src="assets/icons/heart.svg" alt="" />
+                  </button>
+                </div>
+                <h3 class="similar-name">Cotton Slip</h3>
+                <p class="similar-price">$859.00</p>
+                <p class="similar-sub">6 types of skirts available</p>
+                <div class="similar-rating">
+                  <img src="assets/icons/star-bold.svg" alt="" />
+                  <img src="assets/icons/star-bold.svg" alt="" />
+                  <img src="assets/icons/star-bold.svg" alt="" />
+                  <img src="assets/icons/star-bold.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <span>(132)</span>
+                </div>
+              </article>
+
+              <article class="similar-card">
+                <div class="similar-img-wrap">
+                  <img src="assets/images/product-7.png" alt="Seaside Wrap" />
+                  <button
+                    type="button"
+                    class="similar-wishlist-btn"
+                    aria-label="Add Seaside Wrap to wishlist"
+                  >
+                    <img src="assets/icons/heart.svg" alt="" />
+                  </button>
+                </div>
+                <h3 class="similar-name">Seaside Wrap</h3>
+                <p class="similar-price">$679.00</p>
+                <p class="similar-sub">6 types of skirts available</p>
+                <div class="similar-rating">
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <span>(155)</span>
+                </div>
+              </article>
+
+              <article class="similar-card">
+                <div class="similar-img-wrap">
+                  <img src="assets/images/product-8.png" alt="Breeze A-Line" />
+                  <button
+                    type="button"
+                    class="similar-wishlist-btn"
+                    aria-label="Add Breeze A-Line to wishlist"
+                  >
+                    <img src="assets/icons/heart.svg" alt="" />
+                  </button>
+                </div>
+                <h3 class="similar-name">Breeze A-Line</h3>
+                <p class="similar-price">$529.00</p>
+                <p class="similar-sub">6 types of skirts available</p>
+                <div class="similar-rating">
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <span>(174)</span>
+                </div>
+              </article>
+
+              <article class="similar-card">
+                <div class="similar-img-wrap">
+                  <img src="assets/images/product-9.png" alt="Linen Flow" />
+                  <button
+                    type="button"
+                    class="similar-wishlist-btn"
+                    aria-label="Add Linen Flow to wishlist"
+                  >
+                    <img src="assets/icons/heart.svg" alt="" />
+                  </button>
+                </div>
+                <h3 class="similar-name">Linen Flow</h3>
+                <p class="similar-price">$999.00</p>
+                <p class="similar-sub">6 types of skirts available</p>
+                <div class="similar-rating">
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <span>(283)</span>
+                </div>
+              </article>
+
+              <article class="similar-card">
+                <div class="similar-img-wrap">
+                  <img src="assets/images/product-10.png" alt="Sunray Skirt" />
+                  <button
+                    type="button"
+                    class="similar-wishlist-btn"
+                    aria-label="Add Sunray Skirt to wishlist"
+                  >
+                    <img src="assets/icons/heart.svg" alt="" />
+                  </button>
+                </div>
+                <h3 class="similar-name">Sunray Skirt</h3>
+                <p class="similar-price">$749.00</p>
+                <p class="similar-sub">6 types of skirts available</p>
+                <div class="similar-rating">
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <img src="assets/icons/star.svg" alt="" />
+                  <span>(146)</span>
+                </div>
+              </article>
+            </div>
+
+            <button
+              type="button"
+              class="carousel-arrow next-arrow"
+              aria-label="Next items"
+            >
+              &#8250;
+            </button>
+          </div>
+        </section>
+      </div>
     </main>
-
-</body>
+  </body>
 </html>
