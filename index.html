@@ -3,15 +3,552 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="/assets/icons/favicon.svg" />
+    <link rel="icon" type="image/png" href="assets/icons/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>FashionHub</title>
     <link rel="stylesheet" href="style.css" />
+    <title>FashionHub</title>
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="header__brand">
+        <img
+          src="assets/icons/logo.svg"
+          alt="FashionHub logo"
+          class="header__logo"
+        />
+        <nav class="header__nav">
+          <a href="#category" class="nav__item nav__item--active">Category</a>
+          <a href="#brand" class="nav__item">Brand</a>
+          <a href="#contact" class="nav__item">Contact</a>
+          <a href="#FAQ" class="nav__item">FAQ</a>
+        </nav>
+      </div>
+
+      <div class="header__controls">
+        <button
+          type="button"
+          aria-label="Shopping Cart"
+          class="header__btn header__cart-btn"
+        >
+          <img src="assets/icons/bag-brown.svg" alt="" />
+          <span class="header__cart-count">1</span>
+        </button>
+
+        <button
+          type="button"
+          aria-label="Notification"
+          class="header__btn header__notif-btn"
+        >
+          <img src="assets/icons/notification.svg" alt="" />
+        </button>
+
+        <div class="header__user">
+          <div class="header__user-image">
+            <img src="assets/images/user-1.png" alt="Scarlet Johnson" />
+          </div>
+          <span class="header__greeting">Good Morning!</span>
+          <span class="header__user-name">Scarlet Johnson</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__gallery">
+          <div class="hero__gallery-item hero__gallery-item--banner">
+            <img src="assets/images/product-1.png" alt="Product 1" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-2.png" alt="Product 2" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-3.png" alt="Product 3" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-4.png" alt="Product 4" />
+          </div>
+          <div class="hero__gallery-item">
+            <img src="assets/images/product-5.png" alt="Product 5" />
+          </div>
+        </div>
+
+        <div class="product">
+          <div class="breadcrumb">
+            <span class="breadcrumb__item">Home</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="" />
+            <span class="breadcrumb__item">Fashion</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="" />
+            <span class="breadcrumb__item">Products</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="" />
+            <span class="breadcrumb__item">Skirts</span>
+            <img src="assets/icons/arrow-right-gray.svg" alt="" />
+            <span class="breadcrumb__current">Coast Dress</span>
+          </div>
+
+          <div class="product__info-actions">
+            <div class="product__info">
+              <h1 class="product__title">Coast Dress</h1>
+              <span class="product__subtitle"
+                >Breezy, versatile, seaside ready style</span
+              >
+            </div>
+
+            <div class="product__actions">
+              <button
+                type="button"
+                aria-label="Like product"
+                class="product__action product__action--like"
+              >
+                <img src="assets/icons/heart.svg" alt="" />
+                <span class="product__likes-count">109</span>
+              </button>
+              <button
+                type="button"
+                aria-label="Save product"
+                class="product__action"
+              >
+                <img src="assets/icons/archive.svg" alt="" />
+              </button>
+              <button
+                type="button"
+                aria-label="Share product"
+                class="product__action"
+              >
+                <img src="assets/icons/share.svg" alt="" />
+              </button>
+            </div>
+          </div>
+
+          <div class="product__price-rate">
+            <div class="product__price">
+              <h2 class="product__price-current">$710.99</h2>
+              <span class="product__price-original">$799.99</span>
+            </div>
+
+            <div class="product__rate">
+              <div class="product__rank">
+                <img src="assets/icons/star.svg" alt="" />
+                <span class="product__rank-value">4.8</span>
+              </div>
+              <div class="product__reviews">
+                <img src="assets/icons/message.svg" alt="" />
+                <span class="product__reviews-count">67 Reviews</span>
+              </div>
+              <p class="product__recommendation">
+                <span class="product__recommendation-percent">93%</span> of
+                buyers have recommended this.
+              </p>
+            </div>
+          </div>
+
+          <div class="product__colors">
+            <h3 class="product__section-title">Choose a Color</h3>
+            <div class="product__colors-list">
+              <button
+                type="button"
+                aria-label="Color #ecdecc"
+                class="product__color product__color--selected"
+                style="--color: #ecdecc"
+              >
+                <span class="product__color-swatch"
+                  ><img src="assets/icons/tick-circle.svg" alt=""
+                /></span>
+              </button>
+              <button
+                type="button"
+                aria-label="Color #bbd278"
+                class="product__color"
+                style="--color: #bbd278"
+              >
+                <span class="product__color-swatch"></span>
+              </button>
+              <button
+                type="button"
+                aria-label="Color #bbc1f8"
+                class="product__color"
+                style="--color: #bbc1f8"
+              >
+                <span class="product__color-swatch"></span>
+              </button>
+              <button
+                type="button"
+                aria-label="Color #ffaad9"
+                class="product__color"
+                style="--color: #ffaad9"
+              >
+                <span class="product__color-swatch"></span>
+              </button>
+              <button
+                type="button"
+                aria-label="Color #98c185"
+                class="product__color"
+                style="--color: #98c185"
+              >
+                <span class="product__color-swatch"></span>
+              </button>
+              <button
+                type="button"
+                aria-label="Color #ffb6b6"
+                class="product__color"
+                style="--color: #ffb6b6"
+              >
+                <span class="product__color-swatch"></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product__sizes">
+            <h3 class="product__section-title">Choose a Size</h3>
+            <div class="product__size-list">
+              <button
+                type="button"
+                class="product__size product__size--selected"
+              >
+                <span class="product__size-radio"
+                  ><span class="product__size-indicator"></span
+                ></span>
+                <span>Small</span>
+              </button>
+              <button type="button" class="product__size">
+                <span class="product__size-radio"
+                  ><span class="product__size-indicator"></span
+                ></span>
+                <span>Medium</span>
+              </button>
+              <button type="button" class="product__size">
+                <span class="product__size-radio"
+                  ><span class="product__size-indicator"></span
+                ></span>
+                <span>Large</span>
+              </button>
+              <button type="button" class="product__size">
+                <span class="product__size-radio"
+                  ><span class="product__size-indicator"></span
+                ></span>
+                <span>Extra Large</span>
+              </button>
+              <button type="button" class="product__size">
+                <span class="product__size-radio"
+                  ><span class="product__size-indicator"></span
+                ></span>
+                <span>XXL</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="product__actions-panel">
+            <div class="product__quantity">
+              <button
+                type="button"
+                aria-label="Decrease quantity"
+                class="product__quantity-btn"
+              >
+                <img src="assets/icons/minus.svg" alt="" />
+              </button>
+              <span class="product__quantity-value">5</span>
+              <button
+                type="button"
+                aria-label="Increase quantity"
+                class="product__quantity-btn"
+              >
+                <img src="assets/icons/add.svg" alt="" />
+              </button>
+            </div>
+
+            <button type="button" class="product__add-to-cart">
+              <img src="assets/icons/bag-white.svg" alt="" />
+              <span>Add To Cart</span>
+            </button>
+          </div>
+
+          <div class="product__features">
+            <div class="product__feature">
+              <img src="assets/icons/truck.svg" alt="" />
+              <h4 class="product__feature-title">Free Delivery</h4>
+              <p class="product__feature-link">
+                Enter your Postal code for Delivery Availability.
+                <a href="#">Details</a>
+              </p>
+            </div>
+            <div class="product__feature">
+              <img src="assets/icons/bag-red.svg" alt="" />
+              <h4 class="product__feature-title">Return Delivery</h4>
+              <p class="product__feature-link">
+                Free 30 days Delivery Return.
+                <a href="#">Details</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2 class="section-heading">Reviews</h2>
+
+        <article class="review">
+          <div class="review__header">
+            <img
+              src="assets/images/user-2.png"
+              alt="Annie Stanley"
+              class="review__avatar"
+            />
+            <div class="review__meta">
+              <div class="review__author">
+                <span class="review__name">Annie Stanley</span>
+                <span class="review__time">3 Days ago</span>
+              </div>
+              <div class="review__stars">
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <h3 class="review__title">Create Product</h3>
+          <p class="review__text">
+            I was surprised by how soft and comfortable the fabric feels. The
+            dress fits perfectly and looks even better in person — totally worth
+            the price!
+          </p>
+          <div class="review__footer">
+            <button type="button" class="review__btn review__btn--like">
+              <img src="assets/icons/like.svg" alt="" />
+              Like
+            </button>
+            <button type="button" class="review__btn review__btn--reply">
+              Reply
+            </button>
+          </div>
+        </article>
+
+        <article class="review">
+          <div class="review__header">
+            <img
+              src="assets/images/user-3.png"
+              alt="Amelie Cooper"
+              class="review__avatar"
+            />
+            <div class="review__meta">
+              <div class="review__author">
+                <span class="review__name">Amelie Cooper</span>
+                <span class="review__time">3 Days ago</span>
+              </div>
+              <div class="review__stars">
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+              </div>
+            </div>
+          </div>
+          <h3 class="review__title">The best product In Market</h3>
+          <p class="review__text">
+            The blouse arrived quickly and the quality is amazing. The stitching
+            is neat, colors are vibrant, and it feels really elegant when worn.
+            I'll definitely buy again!
+          </p>
+          <div class="review__footer">
+            <button type="button" class="review__btn review__btn--like">
+              <img src="assets/icons/like.svg" alt="" />
+              Like
+            </button>
+            <button type="button" class="review__btn review__btn--reply">
+              Reply
+            </button>
+          </div>
+        </article>
+      </section>
+
+      <section class="write-review">
+        <h2 class="section-heading">Write a Review</h2>
+
+        <form class="write-review__form">
+          <label class="write-review__label" for="review-title"
+            >Review Title</label
+          >
+          <input
+            type="text"
+            id="review-title"
+            class="write-review__input"
+            placeholder="Great Products"
+          />
+
+          <label class="write-review__label" for="review-content"
+            >Review Content</label
+          >
+          <textarea
+            id="review-content"
+            class="write-review__textarea"
+            rows="6"
+          ></textarea>
+
+          <button type="submit" class="write-review__submit">
+            Submit Review
+          </button>
+        </form>
+      </section>
+
+      <section class="similar">
+        <h2 class="section-heading">Similar Items You Might Also Like</h2>
+
+        <div class="similar__slider">
+          <button
+            type="button"
+            aria-label="Previous items"
+            class="similar__arrow similar__arrow--prev"
+          >
+            <img src="assets/icons/arrow-left.svg" alt="" />
+          </button>
+
+          <div class="similar__grid">
+            <article class="similar-card">
+              <div class="similar-card__image">
+                <img src="assets/images/similar-1.png" alt="Cotton Slip" />
+                <button
+                  type="button"
+                  aria-label="Like"
+                  class="similar-card__like"
+                >
+                  <img src="assets/icons/heart.svg" alt="" />
+                </button>
+              </div>
+              <h3 class="similar-card__name">Cotton Slip</h3>
+              <span class="similar-card__price">$859.00</span>
+              <span class="similar-card__types"
+                >6 types of skirts available</span
+              >
+              <div class="similar-card__rate">
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <span class="similar-card__rate-count">(132)</span>
+              </div>
+            </article>
+
+            <article class="similar-card">
+              <div class="similar-card__image">
+                <img src="assets/images/similar-2.png" alt="Seaside Wrap" />
+                <button
+                  type="button"
+                  aria-label="Like"
+                  class="similar-card__like"
+                >
+                  <img src="assets/icons/heart.svg" alt="" />
+                </button>
+              </div>
+              <h3 class="similar-card__name">Seaside Wrap</h3>
+              <span class="similar-card__price">$679.00</span>
+              <span class="similar-card__types"
+                >6 types of skirts available</span
+              >
+              <div class="similar-card__rate">
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <span class="similar-card__rate-count">(155)</span>
+              </div>
+            </article>
+
+            <article class="similar-card">
+              <div class="similar-card__image">
+                <img src="assets/images/similar-3.png" alt="Breeze A-Line" />
+                <button
+                  type="button"
+                  aria-label="Like"
+                  class="similar-card__like"
+                >
+                  <img src="assets/icons/heart.svg" alt="" />
+                </button>
+              </div>
+              <h3 class="similar-card__name">Breeze A-Line</h3>
+              <span class="similar-card__price">$529.00</span>
+              <span class="similar-card__types"
+                >6 types of skirts available</span
+              >
+              <div class="similar-card__rate">
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <span class="similar-card__rate-count">(174)</span>
+              </div>
+            </article>
+
+            <article class="similar-card">
+              <div class="similar-card__image">
+                <img src="assets/images/similar-4.png" alt="Linen Flow" />
+                <button
+                  type="button"
+                  aria-label="Like"
+                  class="similar-card__like"
+                >
+                  <img src="assets/icons/heart.svg" alt="" />
+                </button>
+              </div>
+              <h3 class="similar-card__name">Linen Flow</h3>
+              <span class="similar-card__price">$999.00</span>
+              <span class="similar-card__types"
+                >6 types of skirts available</span
+              >
+              <div class="similar-card__rate">
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <span class="similar-card__rate-count">(283)</span>
+              </div>
+            </article>
+
+            <article class="similar-card">
+              <div class="similar-card__image">
+                <img src="assets/images/similar-5.png" alt="Sunray Skirt" />
+                <button
+                  type="button"
+                  aria-label="Like"
+                  class="similar-card__like"
+                >
+                  <img src="assets/icons/heart.svg" alt="" />
+                </button>
+              </div>
+              <h3 class="similar-card__name">Sunray Skirt</h3>
+              <span class="similar-card__price">$749.00</span>
+              <span class="similar-card__types"
+                >6 types of skirts available</span
+              >
+              <div class="similar-card__rate">
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <img src="assets/icons/star.svg" alt="" />
+                <span class="similar-card__rate-count">(146)</span>
+              </div>
+            </article>
+          </div>
+
+          <button
+            type="button"
+            aria-label="Next items"
+            class="similar__arrow similar__arrow--next"
+          >
+            <img src="assets/icons/arrow-right-gray.svg" alt="" />
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
