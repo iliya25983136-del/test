@@ -76,23 +76,6 @@ html {
     0 0 0 6px var(--color-primary-soft-hover);
 }
 
-*::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background-color: var(--color-border);
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background-color: var(--color-gray-light);
-}
-
-*::-webkit-scrollbar-track {
-  background-color: var(--color-bg-light);
-}
-
 body {
   font-family: var(--font-main);
   font-size: 16px;
@@ -139,7 +122,7 @@ header {
 }
 
 .nav__item:hover,
-.nav__item--active {
+.nav__item:focus {
   background-color: var(--color-primary-soft-hover);
 }
 
